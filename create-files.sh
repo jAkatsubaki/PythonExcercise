@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 k=1
 kk=0
 dir=""
