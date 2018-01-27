@@ -1,4 +1,8 @@
+import nekoanalyzer
 import MeCab
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
 
 def make_analyzed_file(input_file_name: str, output_file_name: str) -> None:
     """
@@ -10,4 +14,6 @@ def make_analyzed_file(input_file_name: str, output_file_name: str) -> None:
     with open(input_file_name, encoding='utf-8') as input_file:
         with open(output_file_name, mode='w', encoding='utf-8') as output_file:
             output_file.write(_m.parse(input_file.read()))
+
+
 make_analyzed_file('neko.txt', 'neko.txt.mecab')
