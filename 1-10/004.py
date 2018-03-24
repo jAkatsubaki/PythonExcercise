@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
 
-str = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-str = str.replace('.', "")
-str = str.replace(',', "")
-str = str.split()
 
-list = []
+class c004:
+    def solver(self):
+        s = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
+        s = s.replace('.', "")
+        s = s.replace(',', "")
+        s = s.split()
 
-for word in str:
-    list.append(len(word))
+        list = []
 
-print list
+        for word in s:
+            list.append(len(word))
+
+        print(list)

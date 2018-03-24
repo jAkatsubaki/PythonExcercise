@@ -1,9 +1,13 @@
 #-*- coding: utf-8 -*-
-str1 = u'パトカー'
-str2 = u'タクシー'
-str = u''
 
-for x,y in zip(str1,str2):
-    str = str + x + y
 
-print(str)
+class c003:
+    def solver(self):
+        str1 = u'パトカー'
+        str2 = u'タクシー'
+        str3 = u''
+
+        for x, y in zip(str1, str2):
+            str3 = str3 + x + y
+
+        print(str3)

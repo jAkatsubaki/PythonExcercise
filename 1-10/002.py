@@ -1,3 +1,7 @@
 # -*- coding: utf-8 -*-
-str = u'パタトクカシーー'
-print(str[0::2])
+
+
+class c002:
+    def solver(self):
+        str = u'パタトクカシーー'
+        print(str[0::2])

@@ -1,2 +1,5 @@
-str = 'stressed'
-print str[-1::-1]
+
+class c001:
+    def solver(self):
+        str = 'stressed'
+        print(str[-1::-1])
