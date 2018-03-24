@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 
+
 def make_analyzed_file(input_file_name: str, output_file_name: str) -> None:
     """
     プレーンな日本語の文章ファイルを形態素解析してファイルに保存する.
@@ -16,4 +17,5 @@ def make_analyzed_file(input_file_name: str, output_file_name: str) -> None:
             output_file.write(_m.parse(input_file.read()))
 
 
-make_analyzed_file('neko.txt', 'neko.txt.mecab')
+if __name__ == '__main__':
+    make_analyzed_file('neko.txt', 'neko.txt.mecab')

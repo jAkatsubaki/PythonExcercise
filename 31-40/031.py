@@ -4,7 +4,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 
+
 def convertTabbedString2Dictionary(tabstr) -> dict:
+    """
+        This function create the dictionary by reading .mecab file
+    """
     ele = tabstr.split()
     if 0 < len(ele) < 4:
         return {'suraface': ele[0], 'base': '', 'pos': '', 'pos1': ''}
@@ -23,6 +27,7 @@ def morphemes2sentence(morps) -> list:
             sentence = []
 
     return sentences
+
 
 with open('neko.txt.mecab', encoding='utf-8') as f:
     morphems = [convertTabbedString2Dictionary(line) for line in f]
