@@ -1,13 +1,13 @@
 import mywiki
 import re
 
-def removeInnerLinkMarkup(str):
-    str = re.sub(r"'{2,5}", r"", str)
-    str = re.sub(r"\[{2}([^|\]]+?\|)*(.+?)\]{2}", r"\2", str)
-    str = re.sub(r"\{{2}.+?\|.+?\|(.+?)\}{2}", r"\1 ", str)
-    str = re.sub(r"<.*?>", r"", str)
-    str = re.sub(r"\[.*?\]", r"", str)
-    return str
+def removeInnerLinkMarkup(str1):
+    str1 = re.sub(r"'{2,5}", r"", str1)
+    str1 = re.sub(r"\[{2}([^|\]]+?\|)*(.+?)\]{2}", r"\2", str1)
+    str1 = re.sub(r"\{{2}.+?\|.+?\|(.+?)\}{2}", r"\1 ", str1)
+    str1 = re.sub(r"<.*?>", r"", str1)
+    str1 = re.sub(r"\[.*?\]", r"", str1)
+    return str1
 
 def main():
     lines = mywiki.extrac_text_from_title(u'イギリス').split('\n')
