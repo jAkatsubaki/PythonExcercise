@@ -2,6 +2,7 @@
 *.mecab
 *.txt
 *.png
+hightemp*.*
 
 .idea/*
 */__pycache__/*
