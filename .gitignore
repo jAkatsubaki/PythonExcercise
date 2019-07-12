@@ -2,6 +2,14 @@
 *.mecab
 *.txt
 *.png
+hightemp_split00
+hightemp_split01
+hightemp_split02
+hightemp_split03
+hightemp_split04
+hightemp_split05
+hightemp_split06
+hightemp_split07
 hightemp*.*
 
 .idea/*
